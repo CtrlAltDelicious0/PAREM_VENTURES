@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- BOILERPLATE -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- PAGE / TITLE -->
+        <title>PAREM VENTURES / About Us</title>
+
+        <!-- PAGE / FAVICON -->
+        <link rel="icon" href="img/icons/favicon.svg" type="image/png">
+
+        <!-- LINK / CSS -->
+        <link rel="stylesheet" href="css/about_us.css">
+
+        <!-- LINK / JS - ScrollReveal-->
+        <script src="https://unpkg.com/scrollreveal" defer></script>
+
+        <!-- LINK / JS - LORDICON -->
+        <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
+
+        <!-- LINK / JS -->
+        <script src="js/about_us.js" defer></script>
+    </head>
+
+    <body>
+        <!-- HEADER / MENU -->
+        <ul id="menu" class="menu">
+            <li>
+                <button style="background: none; border: none;" aria-label="Hide menu" onclick="hideMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"> <line x1="18" y1="6" x2="6" y2="18"></line> <line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </li>
+    
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="about_us.html" aria-label="About">About</a></li>
+            <li><a href="portfolio.html" aria-label="Portfolio">Portfolio</a></li>
+            <li><a href="index.html#contact" aria-label="Contact">Contact</a></li>
+        </ul>
+
+        <!-- HEADER / NAVBAR -->
+        <header class="header">
+            <img src="img/logo.png" id="header-logo">
+    
+            <a href="index.html" class="hideOnMobile">Home</a>
+            <a href="about_us.html" class="hideOnMobile">About Us</a>
+            <a href="portfolio.html" class="hideOnMobile">Portfolio</a>
+
+            <button class="hideOnMobile" onclick="location.href='index.html#contact'">Contact</button>
+
+            <a href="#" class="menu-button" onclick="showMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"> <line x1="3" y1="12" x2="21" y2="12"></line> <line x1="3" y1="6" x2="21" y2="6"></line> <line x1="3" y1="18" x2="21" y2="18"></line></svg></a>
+        </header>
+
+        <!-- ABOUT US SECTION -->
+        <div class="section-container about">
+            <div class="section-left">
+                <div class="box-1">
+                    <h1 class="about-title-1">About Us</h1>
+                    <p class="about-text-1"><b>PAREM Ventures Co.</b> is a privately held business based in Las Piñas City, Philippines. The company was established in 1993 and is 100% Filipino-owned.</p>
+                    <p class="about-text-2">Our company is engaged in the manufacturing, promotions and trading of mascots, 3D fiberglass statues and costumes. Since we began our operations, we have supplied products and services to local companies as well as multinational corporations both within the Philippines and abroad.</p>
+
+                    <div class="button-container">
+                        <a class="about-contact" href="index.html#contact" aria-label="Contact">Need a mascot? Contact Us!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-right">
+                <div class="box-2">
+                    <img class="about-img-1" src="img/about.png">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </body>
+</html>

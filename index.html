@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- BOILERPLATE -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- PAGE / TITLE -->
+        <title>PAREM VENTURES / Home</title>
+
+        <!-- PAGE / FAVICON -->
+        <link rel="icon" href="img/icons/favicon.svg" type="image/png">
+
+        <!-- LINK / CSS -->
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- LINK / JS - ScrollReveal-->
+        <script src="https://unpkg.com/scrollreveal" defer></script>
+
+        <!-- LINK / JS - LORDICON -->
+        <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
+
+        <!-- LINK / JS -->
+        <script src="js/index.js" defer></script>
+    </head>
+
+    <body>
+        <!-- HEADER / MENU -->
+        <ul id="menu" class="menu">
+            <li>
+                <button style="background: none; border: none;" aria-label="Hide menu" onclick="hideMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </li>
+            
+            <li><a href="index.html" aria-label="Home">Home</a></li>
+            <li><a href="about_us.html" aria-label="About">About</a></li>
+            <li><a href="portfolio.html" aria-label="Portfolio">Portfolio</a></li>
+            <li><a href="#contact" aria-label="Contact" onclick="closeMenuAndScroll(event)">Contact</a></li>
+        </ul>
+        
+        <!-- HEADER / NAVBAR -->
+        <header class="header">
+            <img src="img/logo.png" id="header-logo">
+
+            <a href="index.html" class="hideOnMobile">Home</a>
+            <a href="about_us.html" class="hideOnMobile">About Us</a>
+            <a href="portfolio.html" class="hideOnMobile">Portfolio</a>
+
+            <button class="hideOnMobile" onclick="location.href='#contact'">Contact</button>
+
+            <a href="#" class="menu-button" onclick="showMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a>
+        </header>
+        
+        <!-- SECTION / HERO -->
+        <section class="section-container hero">
+            <div class="section-left">
+                <div class="box box-1">
+                    <h1 id="hero-title-1">The Home of</h1>
+                    <h1 id="hero-title-2">Mascots</h1>
+                    <p id="hero-text-1">Discover the magical kingdom of mascots, where every creation is a masterpiece and every character has a story to tell!</p>
+                </div>
+            </div>
+
+            <div class="section-right">
+                <div class="box box-2">
+                    <img src="img/hero.png" id="hero-img-1">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SECTION / SHOWCASE -->
+        <section class="showcase">
+            <div class="wrapper wrapper-top">
+                <div class="itemLeft item1"><img src="img/mascots/! BURGER KING - IQ [FINAL].png"></div>
+                <div class="itemLeft item2"><img src="img/mascots/! EVEREADY - CAT [FIXED].png"></div>
+                <div class="itemLeft item3"><img src="img/mascots/! DWARF - DOPEY [FINAL].png"></div>
+                <div class="itemLeft item4"><img src="img/mascots/! TIM PENCIL [FINAL].png"></div>
+                <div class="itemLeft item5"><img src="img/mascots/! ENERGIZER - BATTERY [FINAL].png"></div>
+                <div class="itemLeft item6"><img src="img/mascots/! EIGHT WAVES [FINAL].png"></div>
+                <div class="itemLeft item7"><img src="img/mascots/! PANZEE [FINAL].png"></div>
+                <div class="itemLeft item8"><img src="img/mascots/! HAMLEY'S [FINAL].png"></div>
+            </div>
+
+            <div class="wrapper wrapper-bottom">
+                <div class="itemRight item1"><img src="img/mascots/! COUNTRY WAFFLES [FINAL].png"></div>
+                <div class="itemRight item2"><img src="img/mascots/! POLLO LOCO [FINAL].png"></div>
+                <div class="itemRight item3"><img src="img/mascots/! TITA JULIE [FINAL].png"></div>
+                <div class="itemRight item4"><img src="img/mascots/! MR. BEAN [FINAL].png"></div>
+                <div class="itemRight item5"><img src="img/mascots/! NESTLE - HONEY STARS [FINAL].png"></div>
+                <div class="itemRight item6"><img src="img/mascots/! KFC [FINAL].png"></div>
+                <div class="itemRight item7"><img src="img/mascots/! BURGER KING - SNAPS [FINAL].png"></div>
+                <div class="itemRight item8"><img src="img/mascots/! NESTLE - SNOWFLAKE [FINAL].png"></div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SECTION / PRODUCTS -->
+        <section class="section-container products">
+            <div class="section-left">
+                <div class="box box-3">
+                    <img src="img/products.png" id="products-img-1">
+                </div>
+            </div>
+
+            <div class="section-right">
+                <div class="box box-4">
+                    <h1 id="products-title-1">Products</h1>
+                    <p id="products-text-1">We produce high-quality full-body mascot suits, mascot heads, costumes, and 3D fiberglass statues. We also provide cleaning and refurbishing services for existing mascots.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SECTION / OUR PROCESS -->
+        <section class="section-container process">
+            <div class="process-title-container">
+                <h1 id="process-title">Our Process</h1>
+            </div>
+
+            <div class="process-container process-container-1">
+                <div class="process-img-container">
+                    <lord-icon src="https://cdn.lordicon.com/fowixcuo.json" trigger="hover" colors="primary:#444444"
+                        style="width:200px;height:200px">
+                    </lord-icon>
+                </div>
+
+                <div class="process-text-container">
+                    <h1 class="process-title-1">1. Conceptualization</h1>
+                    <p class="process-text-1">Whether you have an existing design or need to create a new character, our artists can assist in developing a mascot tailored to your requirements.</p>
+                </div>
+            </div>
+
+            <div class="process-container process-container-2">
+                <div class="process-text-container">
+                    <h1 class="process-title-1">2. Mold Development</h1>
+                    <p class="process-text-1">This is where we begin to bring your concept to life. We sculpt a sample of your character into the envisioned 3D mascot. You also have the opportunity to select the fabrics, furs, and other textures that will be used in creating your mascot.</p>
+                </div>
+
+                <div class="process-img-container">
+                    <lord-icon src="https://cdn.lordicon.com/iazmohzf.json" trigger="hover" colors="primary:#444444"
+                        style="width:200px;height:200px">
+                    </lord-icon>
+                </div>
+            </div>
+
+            <div class="process-container process-container-3">
+                <div class="process-img-container">
+                    <lord-icon src="https://cdn.lordicon.com/lomfljuq.json" trigger="hover" colors="primary:#444444"
+                        style="width:200px;height:200px">
+                    </lord-icon>
+                </div>
+
+                <div class="process-text-container">
+                    <h1 class="process-title-1">3. Production</h1>
+                    <p class="process-text-1">After you have approved the mold and materials for your character, our team proceeds to create your mascot. <b>All of our products are 100% handcrafted.</b></p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SECTION / HOW TO ORDER -->
+        <section class="section-container howto">
+            <div class="howto-title-container">
+                <h1 id="howto-title-1">How to Order</h1>
+            </div>
+
+            <div class="box-5">
+                <div class="box-howto box-howto-1">
+                    <div class="howto-icon-container">
+                        <lord-icon src="https://cdn.lordicon.com/srsgifqc.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:100px;height:100px"></lord-icon>
+                    </div>
+
+                    <div class="howto-heading-container">
+                        <h1 class="howto-heading">1. Contact Us</h1>
+                    </div>
+
+                    <div class="howto-text-container">
+                        <p class="howto-text">
+                            Call or e-mail us and let us know what kind of mascot you want to be produced so we can provide you an estimate cost.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-howto box-howto-2">
+                    <div class="howto-icon-container">
+                        <lord-icon src="https://cdn.lordicon.com/caaolypd.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:100px;height:100px"></lord-icon>
+                    </div>
+
+                    <div class="howto-heading-container">
+                        <h1 class="howto-heading">2. Quotation</h1>
+                    </div>
+
+                    <div class="howto-text-container">
+                        <p class="howto-text">
+                            We will send you a free quotation based on the mascot details that you have provided us.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-howto box-howto-3">
+                    <div class="howto-icon-container">
+                        <lord-icon src="https://cdn.lordicon.com/xuyycdjx.json" trigger="loop" delay="2000" colors="primary:#ffffff" style="width:100px;height:100px"></lord-icon>
+                    </div>
+
+                    <div class="howto-heading-container">
+                        <h1 class="howto-heading">3. Purchase Order</h1>
+                    </div>
+
+                    <div class="howto-text-container">
+                        <p class="howto-text">
+                            Once you have approved the quotation, we will ask you to sign a purchase order form which serves as a contract between both our parties. This will contain details about the quantity, production timeline and delivery date of your order.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SECTION / CONTACT-->
+        <section class="section-container" id="contact">
+            <div class="section-left">
+                <div class="box box-6">
+                    <h1 id="contact-title-1">Contact Us</h1>
+
+                    <div class="contact-text-container contact-text-container-1">
+                        <lord-icon src="https://cdn.lordicon.com/slmechys.json" trigger="loop" delay="2000" colors="primary:#444444" style="width:24px;height:24px"></lord-icon>
+                        <p id="contact-text-1"><a href="mailto:parem_ventures@yahoo.com" class="email-link">parem_ventures@yahoo.com</a></p>
+                    </div>                                     
+
+                    <div class="contact-text-container contact-text-container-2">
+                        <lord-icon src="https://cdn.lordicon.com/srsgifqc.json" trigger="loop" delay="2000" colors="primary:#444444" style="width:24px;height:24px"></lord-icon>
+                        <p id="contact-text-2">+632-88051384<br>+632-88018958</p>
+                    </div>
+
+                    <div class="contact-text-container contact-text-container-3">
+                        <lord-icon src="https://cdn.lordicon.com/fnxnvref.json" trigger="loop" delay="2000" style="width:24px;height:24px"></lord-icon>
+                        <p id="contact-text-3">Equitable Village, Talon IV, Las Pinas City, 1747, Metro Manila, Philippines</p>
+                    </div>
+
+                    <p id="warning">All images on this website are the property of PAREM VENTURES. <span>Unauthorized reposting, editing, mixing, or reuse of these images for your own content is prohibited and will result in legal action.</span></p>
+                    <a href="https://lordicon.com/" id="attribution">Icons by Lordicon.com</a>
+                </div>
+            </div>
+
+            <div class="section-right">
+                <div class="box box-7">
+                    <img src="img/logo.png" id="contact-img-1">
+                </div>
+            </div>
+        </section>
+
+        <hr id="last">
+    </body>
+</html>
